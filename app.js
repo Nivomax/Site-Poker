@@ -298,10 +298,9 @@ function renderHome() {
         <section class="hero" aria-label="Section principale">
           <div class="hero__inner">
             <div class="hero__content">
-              <h1 class="hero__title">Association Poker — Saison 2026</h1>
+              <h1 class="hero__title">Soirée LAS VEGAS - 29 mars 2026</h1>
               <div class="hero__text">
-                Soirées hebdo, classement évolutif, esprit convivial.
-                Rejoignez la saison et suivez vos points séance après séance.
+                Soirées hebdo, classement évolutif, esprit convivial..
               </div>
               <div class="hero__actions">
                 <a class="btn btn--primary" href="#/contact">Rejoindre l’asso</a>
@@ -311,7 +310,7 @@ function renderHome() {
 
             <aside class="card calendar" aria-label="Prochains événements">
               <div class="calendar__title">
-                <h3>📅 Prochains événements</h3>
+                <h3>Prochains événements</h3>
                 <span class="badge">Lien .ics</span>
               </div>
 
@@ -326,13 +325,6 @@ function renderHome() {
                   </div>
                 `).join("")}
               </div>
-
-              <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:6px">
-                <a class="btn btn--primary" href="${ICS_URL}" download>Ajouter à mon calendrier</a>
-                <button class="btn btn--secondary" id="copyIcsBtn" type="button">Copier le lien ICS</button>
-              </div>
-
-              <div class="note">Astuce : vous pouvez “abonner” votre calendrier à ce lien pour recevoir les mises à jour automatiquement.</div>
             </aside>
           </div>
         </section>
@@ -342,12 +334,11 @@ function renderHome() {
             <div class="panel__header">
               <div>
                 <h2 class="h2">CLASSEMENT / RANKING</h2>
-                <div class="kicker">Tri par score décroissant • Cliquez une ligne pour voir le détail</div>
+                <div class="kicker">Saison 2O26 - Semestre 2</div>
               </div>
               <div class="toolbar">
                 <div class="input">
-                  <div class="label">Rechercher un joueur</div>
-                  <input class="field" id="searchHome" type="search" placeholder="Ex : Sarah, Bernard…" />
+                  <input class="field" id="searchHome" type="search" placeholder="Rechercher un joueur" />
                 </div>
                 <a class="btn btn--secondary" href="#/classement">Voir tout</a>
               </div>
