@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Association Poker — Saison 2026</title>
+  <meta name="description" content="Association Poker — soirées hebdo, classement, esprit convivial. Saison 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Max 2 polices -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="brand" href="#/">
+        <img class="brand__logo" src="https://dummyimage.com/56x56/111827/ffffff.png&text=P" alt="Logo Association Poker" />
+        <div class="brand__text">
+          <div class="brand__name">Association Poker</div>
+          <div class="brand__tag">Saison 2026</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="icon-btn nav__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-controls="mobileNav" aria-expanded="false">
+          <span class="icon" aria-hidden="true">☰</span>
+        </button>
+
+        <div class="nav__links" id="desktopNav">
+          <a class="nav__link" data-route="#/contact" href="#/contact">Contact</a>
+          <a class="nav__link" data-route="#/" href="#/">Événement</a>
+          <a class="nav__link" data-route="#/classement" href="#/classement">Classement</a>
+          <a class="nav__cta btn btn--primary" href="#/contact">Rejoindre l’asso</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="mobile-nav__header">
+          <div class="mobile-nav__title">Menu</div>
+          <button class="icon-btn" id="mobileCloseBtn" aria-label="Fermer le menu">
+            <span class="icon" aria-hidden="true">✕</span>
+          </button>
+        </div>
+        <div class="mobile-nav__content">
+          <a class="mobile-nav__link" data-route="#/" href="#/">Accueil / Événement</a>
+          <a class="mobile-nav__link" data-route="#/classement" href="#/classement">Classement</a>
+          <a class="mobile-nav__link" data-route="#/historique" href="#/historique">Historique des séances</a>
+          <a class="mobile-nav__link" data-route="#/bureau" href="#/bureau">Bureau</a>
+          <a class="mobile-nav__link" data-route="#/contact" href="#/contact">Contact</a>
+          <a class="mobile-nav__link" data-route="#/admin" href="#/admin">Admin</a>
+
+          <div class="mobile-nav__cta">
+            <a class="btn btn--primary btn--block" href="#/contact">Rejoindre l’asso</a>
+          </div>
+        </div>
+      </div>
+      <button class="mobile-nav__backdrop" id="mobileBackdrop" aria-label="Fermer"></button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div id="app"></div>
+  </main>
+
+  <!-- Drawer Joueur -->
+  <div class="drawer" id="playerDrawer" hidden>
+    <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Détails du joueur">
+      <div class="drawer__header">
+        <div class="drawer__title" id="drawerTitle">Joueur</div>
+        <button class="icon-btn" id="drawerCloseBtn" aria-label="Fermer">
+          <span class="icon" aria-hidden="true">✕</span>
+        </button>
+      </div>
+      <div class="drawer__body" id="drawerBody"></div>
+    </div>
+    <button class="drawer__backdrop" id="drawerBackdrop" aria-label="Fermer"></button>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" aria-live="polite" aria-atomic="true" hidden></div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <div class="footer__brand">Association Poker</div>
+        <div class="footer__muted">© 2026 — Classement & soirées hebdo.</div>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__title">Liens rapides</div>
+        <div class="footer__links">
+          <a href="#/">Accueil</a>
+          <a href="#/classement">Classement</a>
+          <a href="#/historique">Historique</a>
+          <a href="#/bureau">Bureau</a>
+          <a href="#/contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__title">Réseaux</div>
+        <div class="footer__links">
+          <a href="#" aria-label="Instagram (placeholder)">Instagram</a>
+          <a href="#" aria-label="Facebook (placeholder)">Facebook</a>
+          <a href="#" aria-label="X (placeholder)">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./data.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
